@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagenes/tierra.png">
+
+<!-- Link de la página del FAVICON:
+<a target="_blank" href="https://icons8.com/icon/XIaXF0ldSOxD/globo">Globo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+-->
+<!-- PARA PONER EL OG PROTOCOL de vista previa en redes:
+    <html prefix="og: https://ogp.me/ns#">
+<head>
+<title>The Rock (1996)</title>
+<meta property="og:title" content="The Rock" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+
+og:description - A one to two sentence description of your object.
+-->
+
     <title>Currículum Vitae</title>
 </head>
 <body>
@@ -15,8 +32,10 @@ la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar ca
     -->
 <table style="width:100%">
     <tr>
-          <td><img src="imagenes/mariana.png" alt="Imagen de presentación" width="200px" width="200px" ></td>
-          <td><h1>MARIANA ISABEL GADDI</h1></td>
+        <td><img src="imagenes/mariana.png" alt="Imagen de presentación" width="200px" width="200px" ></td>
+        <td><h1>MARIANA ISABEL GADDI</h1>
+              <h4>Currículum Vitae</h4>
+        </td>
           
     </tr>
 </table>
@@ -25,7 +44,21 @@ la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar ca
     <tr>
           <td><button type="button" id="botón">Sobre mi</button></td>
           <td><button type="button" id="botón">Datos personales</button></td>
-          <td><button type="menu" id="botón">Educación</button></td>
+          <td><form action="/action_page.php" method="get">
+            <label for="educacion">Educación</label>
+            <input list="tipo_educacion" name="educacion" id="educacion">
+            <datalist id="tipo_educacion">
+              <option value="Formal">
+              <option value="No formal">
+              <option value="Idiomas>
+              
+            </datalist>
+            <input type="submit">
+          </form><button type="menu" id="botón">Educación</button></td>
+
+          
+
+
           <td><button type="menu" id="botón">Experiencia laboral</button></td>
           <td><button type="button" id="botón">Contacto</button></td>
           <td><button type="button" id="botón">Último curso realizado</button></td>
@@ -37,14 +70,19 @@ la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar ca
 <p>Breve descripción sobre mi y mi búsqueda</p>
 
 <h2>Datos personales</h2>
-<p>Fecha de nacimiento: 05 de junio de 1985
-    Nacionalidad: Argentina 
-    DNI: 31.673.760
-    Dirección: Mendoza 4809 5to B, CABA </p>
+<ul>
+    <li>Fecha de nacimiento: 05 de junio de 1985</li>
+    <li>Nacionalidad: Argentina</li>
+    <li>DNI: 31.673.760</li>
+    <li>Dirección: Mendoza 4809 5to B, CABA</li>
+  </ul>
+
 
 <h2>Educación</h2>
 <!-- Menú desplegable con opciones: FORMAL, NO FORMAL, IDIOMAS
     -->
+    <li id="tipo_educacion"></li>
+<h3 id="Formal">Formal</h3>
 <p>En curso: Profesorado de educación especial.
     Instituto Superior del Profesorado de Educación Especial "ISPEE".
     
@@ -56,6 +94,35 @@ la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar ca
     
     Estudios secundarios (1998 – 2002). 
     Perito Mercantil. Escuela de Comercio Nro. 9 D.E 11, Capital Federal.
+    </p>
+
+<h3 id="No formal">No Formal</h3>
+<p>
+Astronomía General: Introducción al conocimiento del Universo. Planetario Galileo Galilei de Buenos Aires (36hs cátedra), año 2001.
+
+Conocimiento del Cielo. Asociación Argentina “Amigos de la Astronomía” (3 meses), año 2002.
+
+Introducción a la Geología. Planetario Galileo Galilei de Buenos Aires (20hs reloj), año 2003.
+
+Teatro. Centro de Educación no Formal Varela, Varela 753, CABA, años 1998 a 2003.
+
+Teatro. Con el profesor Gabriel Galindez (y en el grupo de Teatro comunitario Pompeya), años 2013 a 2014.
+
+Astronomía General: Introducción al conocimiento del Universo. Planetario Galileo Galilei de Buenos Aires (36hs cátedra), año 2016 y 2018.
+
+agregar  curso de DATA
+</p>
+
+<h3 id="Idiomas">Idiomas</h3>
+<p>Idiomas
+
+    Inglés. 
+    Lectura, escritura y conversación, nivel intermedio.
+    
+    Materias cursadas en el Departamento de Industrias, de la Universidad de Buenos Aires, Ciudad Universitaria:
+    Inglés preparatorio (nueve)
+    Inglés Universitario I (diez)
+    Inglés Universitario II (ocho)
     </p>
 
 <h2>Experiencia laboral</h2>
@@ -102,8 +169,14 @@ la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar ca
     </p>
 
 <h2>Contacto</h2>
-<p>Teléfono celular: (011) 15 3664 2251
-    E-mail: marianagaddi@gmail.com
+<!-- VER cómo dejar espacio entre el mail y el botón de enviar mail
+    -->
+<ul>
+    <li>Teléfono celular: (011) 15 3664 2251</li>
+    <li>E-mail: marianagaddi@gmail.com <button type="button" id="botón"><a href="mailto:marianagaddi@gmail.com">Enviar E-mail</a></button></li>
+</ul>
+<p>
+    
     </p>
 
 <h2>Último curso realizado</h2>
