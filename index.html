@@ -20,7 +20,7 @@
 
 og:description - A one to two sentence description of your object.
 -->
-
+<link rel="stylesheet" type="text/css" href="Carpeta_css/estilo.css">
     <title>Currículum Vitae</title>
 </head>
 <body>
@@ -30,19 +30,30 @@ og:description - A one to two sentence description of your object.
 Quiero poner en seis botones que se puedan apretar, la siguiente información. La imagen y mi nombre ocupando toda
 la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar cada botón, te lleva a ese sector.
     -->
-<table style="width:100%">
+<header>
+    <section class="barra">
+    <nav><table style="width:100%">
     <tr>
         <td><img src="imagenes/mariana.png" alt="Imagen de presentación" width="200px" width="200px" ></td>
         <td><h1>MARIANA ISABEL GADDI</h1>
               <h4>Currículum Vitae</h4>
-        </td>
-          
+        </td>    
     </tr>
-</table>
-
-<table style="width:100%">
     <tr>
-          <td><button type="button" id="botón">Sobre mi</button></td>
+        <td><a href="#sobre_mi">SOBRE MI</a></td>
+        <td><a href="#datos_personales">DATOS PERSONALES</a></td>
+        <td><a href="#educacion">EDUCACIÓN</a></td>
+        
+        </tr>
+</table>
+</nav>
+</section>
+</header>
+<section class="contenido">
+<!--
+    <table style="width:100%">
+    <tr>
+          <td><button type="button" id="botón"><a href="#sobre_mi"></a>Sobre mi</button></td>
           <td><button type="button" id="botón">Datos personales</button></td>
           <td><form action="/action_page.php" method="get">
             <label for="educacion">Educación</label>
@@ -66,10 +77,44 @@ la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar ca
     </tr>
 </table>
 
-<h2>Sobre mi</h2>
+<div>
+    <tr>
+        <li><a href="#sobre_mi">SOBRE MI</a></li>
+        <li><a href="#datos_personales">DATOS PERSONALES</a></li>
+        <li><a href="#educacion">EDUCACIÓN</a></li>
+    </tr>
+</div>
+
+
+<p id="una-id">.......</p>
+<a id="un-identificador"></a>
+<p id="uno">Soy el párrafo uno</p>
+<p><a id="un-anclaje"></a>Este anclaje "uno" no se podría diferenciar del anterior a través de un enlace ancla.</p>
+<p id="uno">Vaya, otro "uno".</p>
+<p id="dos">Soy el párrafo dos.</p>
+<div><p>Los anclajes pueden definirse en los puntos <a id="un-anclaje"></a> exactos dónde queremos que estén.</p></div>
+<a href="http://sitio.com/pagina.html#una-id">Ir al elemento con id="una-id"</a>
+<a href="#una-id">Ir al elemento con id="una-id" del propio documento</a>
+<a id="un-nombre" title="Un título para el anclaje"></a>
+
+<nav>
+    <table>
+        <tr>
+        
+            <td><a href="#sobre_mi">SOBRE MI</a></td>
+            <td><a href="#datos_personales">DATOS PERSONALES</a></td>
+            <td><a href="#educacion">EDUCACIÓN</a></td>
+            <td></td>
+        </tr>
+    </table>
+</nav>
+
+-->
+
+<h2 id="sobre_mi">Sobre mi</h2>
 <p>Breve descripción sobre mi y mi búsqueda</p>
 
-<h2>Datos personales</h2>
+<h2 id="datos_personales">Datos personales</h2>
 <ul>
     <li>Fecha de nacimiento: 05 de junio de 1985</li>
     <li>Nacionalidad: Argentina</li>
@@ -78,7 +123,7 @@ la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar ca
   </ul>
 
 
-<h2>Educación</h2>
+<h2 id="educación">Educación</h2>
 <!-- Menú desplegable con opciones: FORMAL, NO FORMAL, IDIOMAS
     -->
     <li id="tipo_educacion"></li>
@@ -181,6 +226,6 @@ agregar  curso de DATA
 
 <h2>Último curso realizado</h2>
 <p>este curso y gracias por la oportunidad!!!</p>
-
+</section>
 </body>
 </html>
