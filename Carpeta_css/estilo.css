@@ -1,4 +1,72 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 
+#principal {
+  width: 1000px;
+  height: 1500px;
+  margin: 0px auto;
+  background: black;
+}
+
+header { 
+width: 1000px;
+height: 200px;
+background:green;
+}
+
+nav { 
+  width: 1000px;
+  height: 50px;
+  background: purple;
+  }
+
+  section { 
+    width: 1000px;
+    height: 1150px;
+    background: rgb(49, 0, 128);
+    }
+
+  footer { 
+    width: 1000px;
+    height: 100px;
+    background: rgb(128, 0, 0);
+    }
+
+/*BARRA DE NAVEGACVIÓN*/
+ul { 
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background: burlywood;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+ }
+
+ li a {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-right: 1px solid navy; 
+ }
+ 
+ li a:visited { 
+ color: brown;
+ }
+
+ li a:hover { 
+  background-color: cornflowerblue;
+  color: blueviolet ;
+  }
+
+
+/** Todo esto pertenece a index.html
 header {
     background: rgba(0,0,0,0.9);
     width: 100%;
@@ -6,12 +74,15 @@ header {
     z-index: 100;
   }
 
-  .contenido {
-    padding-top: 120px;
-  }
+.contenido {
+  padding-top: 180px;
+}
 
   .barra {
     width: 80%;
     margin: auto;
     overflow:hidden;
   }
+
+
+  
