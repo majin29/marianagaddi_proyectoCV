@@ -1,53 +1,168 @@
 *{
   margin: 0px;
   padding: 0px;
+  font-family: 'EB Garamond', serif;
 }
 
 #principal {
   width: 1000px;
-  height: 1500px;
+  height: 2800px;
   margin: 0px auto;
   background: black;
 }
 
 header { 
-width: 1000px;
-height: 200px;
-background:green;
+  width: 1000px; 
+  height: 200px;
+  background:#008000;
 }
 
 nav { 
   width: 1000px;
   height: 50px;
-  background: purple;
   }
 
-  section { 
-    width: 1000px;
-    height: 1150px;
-    background: rgb(49, 0, 128);
+section { 
+  width: 1000px;
+  height: 2550px;
+  background:rgb(165, 231, 59);
     }
 
-  footer { 
-    width: 1000px;
-    height: 100px;
-    background: rgb(128, 0, 0);
+/*HEADER*/
+img {
+  float: left;
+  margin: 5px;
+ }
+ #header {
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 350px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-right: 40px;
     }
+  
 
-/*BARRA DE NAVEGACVIÓN*/
-ul { 
+/*BARRA DE NAVEGACIÓN*/
+#barra { 
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  background: burlywood;
+  background: #024e02;
   overflow: hidden;
 }
 
-li {
+li.barra_nav {
   float: left;
  }
 
- li a {
+ li a.barra_nav {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-right: 1px solid rgb(0, 102, 0); 
+ }
+ 
+ li a:visited.barra_nav { 
+ color: rgb(129, 131, 230);
+ }
+
+ li a:hover.barra_nav { 
+  background-color: cornflowerblue;
+  color: rgb(2, 29, 3) ;
+  }
+
+/*CONTENIDO*/
+
+/*SOBRE MI*/
+h2.descripcion { 
+  padding-left: 10px;
+  background: #008000;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 16px;
+  text-decoration: none;
+  }
+ 
+p.descripcion { 
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-size: large;
+  background: rgb(165, 231, 59);
+  }
+
+/*DATOS PERSONALES*/
+h2.datos { 
+  padding-left: 10px;
+  background: #008000;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 16px;
+  text-decoration: none;
+  }
+
+ul.datos { 
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background: rgb(165, 231, 59);
+  overflow: hidden;
+}
+
+li.datos {
+  color: black;
+  text-align: left;
+  font-size: large;
+  padding: 12px 16px;
+}
+p.datos { 
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-size: large;
+  background: rgb(224, 243, 194);
+  }
+
+
+/*EDUCACION*/
+h2.edu { 
+  padding-left: 10px;
+  background:#008000;
+  color: black;
+
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 16px;
+  text-decoration: none;
+  }
+h3.edu { 
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: larger;
+
+  color: black;
+ 
+  text-decoration: none;
+  }
+
+#barra_edu { 
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background: #008000;
+  overflow: hidden;
+}
+
+li.edu {
+  float: left;
+ }
+
+li a.edu {
   display: block;
   color: aliceblue;
   text-align: center;
@@ -56,14 +171,141 @@ li {
   border-right: 1px solid navy; 
  }
  
- li a:visited { 
+li a:visited.edu { 
  color: brown;
  }
 
- li a:hover { 
+li a:hover.edu { 
   background-color: cornflowerblue;
   color: blueviolet ;
   }
+#educación {
+  float: left;
+ }
+
+strong,p.edu { 
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-size: large;
+  }
+
+/*EXPERIENCIA LABORAL*/
+h2.labo { 
+  padding-left: 5px;
+  background: #008000;
+  color: black;
+
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 16px;
+  text-decoration: none;
+  }
+
+  h3.labo { 
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+  
+    color: black;
+   
+    text-decoration: none;
+    }
+
+#barra_labo { 
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background: #008000;
+  overflow: hidden;
+}
+
+li.labo {
+  float: left;
+ }
+
+ li a.labo {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-right: 1px solid navy; 
+ }
+ 
+ li a:visited.labo { 
+ color: brown;
+ }
+
+ li a:hover.labo { 
+  background-color: cornflowerblue;
+  color: blueviolet ;
+  }
+#experiencia_laboral {
+  float: left;
+ }
+
+ strong,p.labo { 
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-size: large;
+  }
+
+
+/*CONTACTO*/
+h2.contacto { 
+  padding-left: 5px;
+  background: #008000;
+  color: black;
+
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 16px;
+  text-decoration: none;
+  }
+
+ul.contacto { 
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background: rgb(224, 243, 194);
+  overflow: hidden;
+}
+
+li.contacto {
+  color: black;
+  text-align: left;
+  padding: 16px 16px;
+  font-size: large;
+  padding-right: 25 px;
+}
+
+#boton {
+  background-color: #f4f7f4; /* Green */
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#boton:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#boton {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+
+
 
 
 /** Todo esto pertenece a index.html
