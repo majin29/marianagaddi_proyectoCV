@@ -148,6 +148,14 @@ p.datos {
   padding-left: 15px;
   font-size: 18px;
  }
+
+ span.edad {
+  background-color: #21dfc5;
+  font-size: 18px;
+  padding-left: 3px;
+  margin-left: 40px;
+}
+
 div.dato { 
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -209,6 +217,11 @@ strong,p.edu {
 div.edu {
   padding-top: 30px;
   padding-bottom: 10px;
+  font-size: 18px;
+}
+
+span.edu {
+  background-color: #4CAF50;
   font-size: 18px;
 }
 
