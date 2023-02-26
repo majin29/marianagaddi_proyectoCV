@@ -1,14 +1,13 @@
 *{
   margin: 0px;
   padding: 0px;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #principal {
   width: 1000px;
-  height: 2800px;
+  height: 3700px;
   margin: 0px auto;
-  background: black;
 }
 
 header { 
@@ -20,13 +19,19 @@ header {
 nav { 
   width: 1000px;
   height: 50px;
-  }
+}
 
 section { 
   width: 1000px;
-  height: 2550px;
+  height: 3350px;
   background:rgb(165, 231, 59);
-    }
+}
+
+footer { 
+  width: 1000px;
+  height: 100px;
+  background-color: white;
+}
 
 /*HEADER*/
 img {
@@ -41,8 +46,7 @@ img {
   padding-top: 60px;
   padding-bottom: 50px;
   padding-right: 40px;
-    }
-  
+}
 
 /*BARRA DE NAVEGACIÓN*/
 #barra { 
@@ -51,32 +55,42 @@ img {
   padding: 0px;
   background: #024e02;
   overflow: hidden;
+  border-style: solid;
+  border: 1px;
+  border-color: #024e02;
+  font-size: 18px;
 }
 
 li.barra_nav {
   float: left;
- }
+}
 
- li a.barra_nav {
+li a.barra_nav {
   display: block;
   color: aliceblue;
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
   border-right: 1px solid rgb(0, 102, 0); 
- }
+}
  
- li a:visited.barra_nav { 
+li a:visited.barra_nav { 
  color: rgb(129, 131, 230);
- }
+}
 
- li a:hover.barra_nav { 
+li a:hover.barra_nav { 
   background-color: cornflowerblue;
   color: rgb(2, 29, 3) ;
-  }
+}
+
+img.impresora {
+  width: 44px; /* Ancho del icono */
+  height: 44px; /* Altura del icono */
+  margin-left: 10px; /* Espacio entre el icono y el texto */
+  float: right;
+}
 
 /*CONTENIDO*/
-
 /*SOBRE MI*/
 h2.descripcion { 
   padding-left: 10px;
@@ -86,14 +100,16 @@ h2.descripcion {
   border-width: 1px;
   padding: 10px 16px;
   text-decoration: none;
-  }
- 
+  font-size: 24px;
+}
+#mostrar_ocultar { 
+  text-decoration: none;
+}
+
 p.descripcion { 
-  padding-bottom: 10px;
-  padding-left: 15px;
-  font-size: large;
-  background: rgb(165, 231, 59);
-  }
+  padding: 15px 20px;
+  font-size: 18px;
+}
 
 /*DATOS PERSONALES*/
 h2.datos { 
@@ -104,113 +120,155 @@ h2.datos {
   border-width: 1px;
   padding: 10px 16px;
   text-decoration: none;
-  }
+  font-size: 24px;
+}
+
+img.dato {
+  height: 190px;
+  width: 190px;
+  margin-right: 30px; /* Espacio entre el icono y el texto */
+  float: left ;  
+}
 
 ul.datos { 
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  background: rgb(165, 231, 59);
   overflow: hidden;
 }
 
 li.datos {
   color: black;
   text-align: left;
-  font-size: large;
+  font-size: 18px;
   padding: 12px 16px;
 }
 p.datos { 
   padding-bottom: 10px;
   padding-left: 15px;
-  font-size: large;
-  background: rgb(224, 243, 194);
+  font-size: 18px;
+ }
+div.dato { 
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   }
-
 
 /*EDUCACION*/
 h2.edu { 
   padding-left: 10px;
   background:#008000;
   color: black;
-
-  border-style: solid;
-  border-width: 1px;
   padding: 10px 16px;
   text-decoration: none;
-  }
-h3.edu { 
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: larger;
-
-  color: black;
- 
-  text-decoration: none;
-  }
-
-#barra_edu { 
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  background: #008000;
-  overflow: hidden;
+  float: left;
+  font-size: 24px;
 }
 
-li.edu {
+img.edu_barra {
+  width: 50px; /* Ancho del icono */
+  height: 50px; /* Altura del icono */
+  margin-left: 50px; /* Espacio entre el icono y el texto */
   float: left;
- }
+}
 
-li a.edu {
-  display: block;
-  color: aliceblue;
-  text-align: center;
-  padding: 16px 16px;
-  text-decoration: none;
-  border-right: 1px solid navy; 
- }
- 
-li a:visited.edu { 
- color: brown;
- }
+h3.edu { 
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: black;
+}
 
-li a:hover.edu { 
-  background-color: cornflowerblue;
-  color: blueviolet ;
-  }
+img.edu { 
+  height: 60px;
+  width: 60px;
+  margin-right: 30px; /* Espacio entre el icono y el texto */
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+} 
+
+li.edu {
+  list-style-type: square ;
+  list-style-position: inside;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
 #educación {
   float: left;
- }
+}
 
 strong,p.edu { 
   padding-bottom: 10px;
   padding-left: 15px;
-  font-size: large;
-  }
+  font-size: 18px;
+}
+
+div.edu {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+div.edu_barra { 
+  margin: 0px;
+  padding: 0px;
+  background: #008000;
+  overflow: hidden;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+}  
 
 /*EXPERIENCIA LABORAL*/
 h2.labo { 
   padding-left: 5px;
   background: #008000;
   color: black;
-
-  border-style: solid;
-  border-width: 1px;
   padding: 10px 16px;
   text-decoration: none;
-  }
+  font-size: 24px;
+}
 
-  h3.labo { 
-    padding-left: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: larger;
+img.barra_labo {
+  width: 50px; /* Ancho del icono */
+  height: 50px; /* Altura del icono */
+  margin-left: 50px; /* Espacio entre el icono y el texto */
+  float: left;
+}
+
+div.barra_labo { 
+  margin: 0px;
+  padding: 0px;
+  background: #008000;
+  overflow: hidden;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+div.labo {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
   
-    color: black;
-   
-    text-decoration: none;
-    }
+h3.labo { 
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+img.labo { 
+  height: 60px;
+  width: 60px;
+  margin-right: 30px; /* Espacio entre el icono y el texto */
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
 
 #barra_labo { 
   list-style-type: none;
@@ -222,42 +280,42 @@ h2.labo {
 
 li.labo {
   float: left;
- }
+}
 
- li a.labo {
+li a.labo {
   display: block;
   color: aliceblue;
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
   border-right: 1px solid navy; 
- }
+}
  
- li a:visited.labo { 
+li a:visited.labo { 
  color: brown;
- }
+}
 
- li a:hover.labo { 
+li a:hover.labo { 
   background-color: cornflowerblue;
   color: blueviolet ;
-  }
+}
+
 #experiencia_laboral {
   float: left;
- }
+}
 
- strong,p.labo { 
+strong,p.labo { 
   padding-bottom: 10px;
   padding-left: 15px;
-  font-size: large;
-  }
-
+  font-size: 18px;
+}
 
 /*CONTACTO*/
 h2.contacto { 
   padding-left: 5px;
   background: #008000;
   color: black;
-
+  font-size: 24px;
   border-style: solid;
   border-width: 1px;
   padding: 10px 16px;
@@ -268,31 +326,31 @@ ul.contacto {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  background: rgb(224, 243, 194);
   overflow: hidden;
 }
 
 li.contacto {
   color: black;
   text-align: left;
-  padding: 16px 16px;
-  font-size: large;
-  padding-right: 25 px;
+  padding: 12px 16px;
+  font-size: 18px;
+  padding-right: 40 px;
 }
 
 #boton {
   background-color: #f4f7f4; /* Green */
   border: none;
   color: black;
-  padding: 16px 32px;
+  padding: 14px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
 #boton:hover {
   background-color: #4CAF50;
   color: white;
@@ -304,27 +362,25 @@ li.contacto {
   border: 2px solid #4CAF50;
 }
 
-
-
-
-
-/** Todo esto pertenece a index.html
-header {
-    background: rgba(0,0,0,0.9);
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-  }
-
-.contenido {
-  padding-top: 180px;
+div.footer {
+background-color:#008000;
+width:1000px;
+height:50px;
+font-size: 36px;
+color: rgb(55, 0, 255);
+text-align: center;
 }
 
-  .barra {
-    width: 80%;
-    margin: auto;
-    overflow:hidden;
-  }
+#fecha {
+  text-align: right;
+  vertical-align: text-bottom;
+  color: black;
+  font-size: 14px;
+}
 
-
-  
+.calendario {
+  width: 24px; /* Ancho del icono */
+  height: 24px; /* Altura del icono */
+  margin-left: 10px; /* Espacio entre el icono y el texto */
+  float: right;  
+}

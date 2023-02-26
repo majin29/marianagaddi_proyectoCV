@@ -5,240 +5,251 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="imagenes/tierra.png">
+    <link rel="stylesheet" type="text/css" href="Carpeta_css/estilo.css">
+    <script src="Carpeta_js/hoja_js.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-<!-- Link de la página del FAVICON:
-<a target="_blank" href="https://icons8.com/icon/XIaXF0ldSOxD/globo">Globo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
--->
-<!-- PARA PONER EL OG PROTOCOL de vista previa en redes:
-    <html prefix="og: https://ogp.me/ns#">
-<head>
-<title>The Rock (1996)</title>
-<meta property="og:title" content="The Rock" />
-<meta property="og:type" content="video.movie" />
-<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
-
-og:description - A one to two sentence description of your object.
--->
-<link rel="stylesheet" type="text/css" href="Carpeta_css/estilo.css">
-    <title>Currículum Vitae</title>
+    <title>Mariana Gaddi CV</title>
 </head>
+
 <body>
-    <!--<img src="imagenes/mariana.png" alt="Imagen de presentación" width="200px" width="200px" >
-    <h1>MARIANA ISABEL GADDI</h1>
-
-Quiero poner en seis botones que se puedan apretar, la siguiente información. La imagen y mi nombre ocupando toda
-la pantalla visible, y del mismo ancho distribuidos los 6 botones. Al apretar cada botón, te lleva a ese sector.
-    -->
+<div id="principal">
 <header>
-    <section class="barra">
-    <nav><table style="width:100%">
-    <tr>
-        <td><img src="imagenes/mariana.png" alt="Imagen de presentación" width="200px" width="200px" ></td>
-        <td><h1>MARIANA ISABEL GADDI</h1>
-              <h4>Currículum Vitae</h4>
-        </td>    
-    </tr>
-    <tr>
-        <td><a href="#sobre_mi">SOBRE MI</a></td>
-        <td><a href="#datos_personales">DATOS PERSONALES</a></td>
-        <td><a href="#educacion">EDUCACIÓN</a></td>
-        
-        </tr>
-</table>
-</nav>
-</section>
+    <img src="imagenes/mariana.png" alt="Imagen de presentación" width="200px" width="200px" >
+    <div id="header">
+       <h1 class="header">MARIANA ISABEL GADDI</h1>
+       <h4 class="header">Currículum Vitae</h4>
+    </div>
+    
 </header>
+<nav>
+    <ul class="barra_nav" id="barra">
+        <li class="barra_nav"><a class="barra_nav" href="#sobre_mi">SOBRE MÍ</a></li>
+        <li class="barra_nav"><a class="barra_nav" href="#datos_personales">DATOS PERSONALES</a></li>
+        <li class="barra_nav"><a class="barra_nav" href="#educación">EDUCACIÓN</a></li>
+        <li class="barra_nav"><a class="barra_nav" href="#experiencia_laboral">EXPERIENCIA LABORAL</a></li>
+        <li class="barra_nav"><a class="barra_nav" href="#datos_contacto">CONTACTO</a></li>
+        
+        <li class="barra_nav"><a href="#" onclick="window.print()"><img class="impresora" title="Hacé click para imprimir mi CV" src="imagenes/impresora.png" alt="Ícono de una impresora">
+        </a>
+    </ul>
+</nav>
+
 <section class="contenido">
-<!--
-    <table style="width:100%">
-    <tr>
-          <td><button type="button" id="botón"><a href="#sobre_mi"></a>Sobre mi</button></td>
-          <td><button type="button" id="botón">Datos personales</button></td>
-          <td><form action="/action_page.php" method="get">
-            <label for="educacion">Educación</label>
-            <input list="tipo_educacion" name="educacion" id="educacion">
-            <datalist id="tipo_educacion">
-              <option value="Formal">
-              <option value="No formal">
-              <option value="Idiomas>
-              
-            </datalist>
-            <input type="submit">
-          </form><button type="menu" id="botón">Educación</button></td>
 
-          
+    <a title="Hacé click para mostrar u ocultar esta información." id="mostrar_ocultar" onclick="mostrarOcultarElementos()" href="#"><h2  class="descripcion" id="sobre_mi">Sobre mí</h2></a>
+    <p id="parrafo1" class="descripcion"> Desde pequeña, siempre tuve una gran curiosidad por entender cómo 
+        funciona la naturaleza. Me fascina la astronomía, la forma en que se crean los paisajes, la flora 
+        y la fauna.             
+    </p>
+    <p id="parrafo2" class="descripcion">Conforme fui creciendo, me di cuenta de que mi verdadera pasión era la enseñanza y la
+         divulgación de todo el conocimiento que me apasionaba aprender. Después de explorar diversas disciplinas dentro de las 
+         ciencias naturales, decidí que mi camino estaba también relacionado con la educación.    
+    </p>
+    <p id="parrafo3" class="descripcion">
+       Me convertí en profesora de educación primaria con el objetivo de inspirar y motivar a las futuras
+        generaciones a cuidar y proteger el medio ambiente. Ya que para mí, la enseñanza va más allá de la 
+        transferencia de conocimiento, es una oportunidad para fomentar la reflexión crítica y el desarrollo
+         de habilidades que les permitan a les estudiantes tomar acción en función de un mundo más justo, 
+         sostenible y con lugar para todos los seres que lo habitan. 
+   </p>
 
-
-          <td><button type="menu" id="botón">Experiencia laboral</button></td>
-          <td><button type="button" id="botón">Contacto</button></td>
-          <td><button type="button" id="botón">Último curso realizado</button></td>
-
-    </tr>
-</table>
-
-<div>
-    <tr>
-        <li><a href="#sobre_mi">SOBRE MI</a></li>
-        <li><a href="#datos_personales">DATOS PERSONALES</a></li>
-        <li><a href="#educacion">EDUCACIÓN</a></li>
-    </tr>
+<h2 class="datos" id="datos_personales">Datos personales</h2>
+<img class="dato" src="imagenes/carpeta.png" alt="imagen de una carpeta">
+<div class="dato">
+    <ul class="datos" >
+    <li class="datos"><strong>Fecha de nacimiento:</strong> 05 de junio de 1985</li>
+    <li class="datos"><strong>Nacionalidad:</strong> Argentina</li>
+    <li class="datos"><strong>DNI:</strong> 31.673.760</li>
+    <li class="datos"><strong>Dirección:</strong> Mendoza 4809 5to B, CABA</li>
+  </ul>
 </div>
 
-<div class="btn-group">
-    <button type="button" class="btn btn-default dropdown-toggle"
-            data-toggle="dropdown">
-      Educación <span class="caret"></span>
-    </button>
-  
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="#Formal">Formal</a></li>
-      <li><a href="#No_formal">No Formal</a></li>
-      <li><a href="#Idiomas">Idiomas</a></li>
-      
-    </ul>
-  </div>
+<div class="edu_barra">
+<h2 id="educación" class="edu">Educación: </h2>
+<a href="#Formal"><img class="edu_barra" src="imagenes/educacion_formal.png" title="Ver Educación Formal" alt="Ícono de educación formal">
+</a>
+<a href="#No_formal"><img class="edu_barra" src="imagenes/educacion_no_formal.png" title="Ver Educación no Formal" alt="Ícono de educación no formal">
+</a>
+<a href="#Idiomas"><img class="edu_barra" src="imagenes/educacion_idiomas.png" title="Ver Idiomas" alt="Ícono de idiomas">
+</a>
+</div>
+    
+<img class="edu" src="imagenes/educacion_formal.png" alt="Ícono de educación formal">
+<h3 class="edu" id="Formal">Educación Formal </h3>
+<div id="div_formal" class="edu">
+    <strong class="edu">Profesorado de educación especial. En curso.</strong> 
+    <p class="edu"> Instituto Superior del Profesorado de Educación Especial "ISPEE".</p>
+
+    <strong class="edu">Profesora de Educación Primaria. Egresada 2021.</strong> 
+    <p class="edu"> Escuela Normal Superior N° 10 D.E. 10, “Juan Bautista Alberdi”. </p>
+
+    <strong class="edu">Licenciatura en Ciencias Geológicas (2005 – 2012). Levemente incompleta.</strong>  
+    <p class="edu"> Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, CABA, Argentina.</p>
+
+    <strong class="edu">Estudios secundarios (1998 – 2002).</strong>  
+    <p class="edu">Perito Mercantil. Escuela de Comercio Nro. 9 D.E 11, CABA.</p>
+</div>
+
+<img class="edu" src="imagenes/educacion_no_formal.png" alt="Ícono de educación no formal">      
+<h3 class="edu" id="No_formal"> Educación No Formal </h3>
+<div class="edu">
+    <strong class="edu">BIG DATA: haciendo hablar a los datos.</strong>
+    <p class="edu">INAP (comisión IN-NS-45903), año 2022.</p>
+
+    <strong class="edu">Astronomía General: Introducción al conocimiento del Universo.</strong> 
+     <p class="edu">Planetario Galileo Galilei de Buenos Aires (36hs cátedra), año 2018.</p>
+
+     <strong class="edu">Astronomía General: Introducción al conocimiento del Universo.</strong> 
+     <p class="edu">Planetario Galileo Galilei de Buenos Aires (36hs cátedra), año 2016.</p>
+
+     <strong class="edu">Teatro Comunitario Pompeya.</strong> 
+     <p class="edu">Director: Gabriel Galindez. Cnel. Martiniano Chilavert 1136, C1437HBD, Buenos Aires. Años 2013 a 2014.</p>
+
+     <strong class="edu">Introducción a la Geología.</strong> 
+     <p class="edu">Planetario Galileo Galilei de Buenos Aires (20hs reloj), año 2003.</p>
+
+     <strong class="edu">Teatro.</strong> 
+     <p class="edu">Centro de Educación no Formal Varela, Varela 753, CABA, años 1998 a 2003.</p>
+
+     <strong class="edu">Conocimiento del Cielo.</strong> 
+     <p class="edu">Asociación Argentina “Amigos de la Astronomía” (3 meses), año 2002.</p>
+
+     <strong class="edu">Astronomía General: Introducción al conocimiento del Universo.</strong> 
+     <p class="edu"> Planetario Galileo Galilei de Buenos Aires (36hs cátedra), año 2001. </p>
+</div>
+   
+<img class="edu" src="imagenes/educacion_idiomas.png" alt="Ícono de idiomas">    
+<h3 class="edu" id="Idiomas">Idiomas</h3>
+<div class="edu">
+    <strong class="edu">Inglés.</strong>   
+    <p class="edu">Lectura, escritura y conversación, nivel intermedio.</p>
+    <p class="edu">Materias cursadas en el Departamento de Industrias, de la Universidad de Buenos Aires, Ciudad Universitaria:
+     <ul>
+        <li class="edu">Inglés preparatorio (nota: nueve)</li>
+        <li class="edu">Inglés Universitario I (nota: diez)</li>
+        <li class="edu">Inglés Universitario II (nota: ocho)</li>
+    </ul> 
+    </p>
+</div>    
+
+<div class="barra_labo">
+    <h2 id="experiencia_laboral" class="labo">Experiencia Laboral: </h2>
+    <a href="#Docencia"><img class="barra_labo" src="imagenes/docencia.png" title="Ver experiencia laboral en Docencia" alt="Ícono de docencia">
+    </a>
+    <a href="#Geologia"><img class="barra_labo" src="imagenes/geologia.png" title="Ver experiencia laboral en Geoloogía" alt="Ícono de geología">
+    </a>
+    <a href="#Administrativo"><img class="barra_labo" src="imagenes/administracion.png" title="Ver experiencia laboral en tareas administrativas" alt="Ícono de tareas administrativas">
+    </a>
+    <a href="#Voluntariados"><img class="barra_labo" src="imagenes/voluntariado.png" title="Ver voluntariados realizados" alt="Ícono de voluntariado">
+    </a>
+    </div>   
+
+<img class="labo" src="imagenes/docencia.png" alt="Ícono de imagen de docencia">
+<h3 class="labo" id="Docencia">Docencia</h3>
+<div class="labo">
+    <strong class="labo">Febrero 2022 – Actualidad</strong>
+    <p class="labo">Docente de plurigrado en segundo ciclo, en el Centro de Educación Complementario 
+        “La escuelita”, sede Barrio El Ceibo, La Lucila.</p>
+
+    <strong class="labo">Marzo 2021 – Febrero 2022</strong>
+    <p class="labo">Docente de grado de carácter suplente en escuelas públicas de la Ciudad de Buenos Aires.</p>
 
 
-
-<p id="una-id">.......</p>
-<a id="un-identificador"></a>
-<p id="uno">Soy el párrafo uno</p>
-<p><a id="un-anclaje"></a>Este anclaje "uno" no se podría diferenciar del anterior a través de un enlace ancla.</p>
-<p id="uno">Vaya, otro "uno".</p>
-<p id="dos">Soy el párrafo dos.</p>
-<div><p>Los anclajes pueden definirse en los puntos <a id="un-anclaje"></a> exactos dónde queremos que estén.</p></div>
-<a href="http://sitio.com/pagina.html#una-id">Ir al elemento con id="una-id"</a>
-<a href="#una-id">Ir al elemento con id="una-id" del propio documento</a>
-<a id="un-nombre" title="Un título para el anclaje"></a>
-
-<nav>
-    <table>
-        <tr>
+    <strong class="labo">Marzo 2018 – Marzo 2021</strong>
+    <p class="labo">Docente de apoyo para primer grado. Instituto Tomás Devoto, Franklin D. Roosevelt 5678, 
+        Villa Urquiza.</p>
         
-            <td><a href="#sobre_mi">SOBRE MI</a></td>
-            <td><a href="#datos_personales">DATOS PERSONALES</a></td>
-            <td><a href="#educacion">EDUCACIÓN</a></td>
-            <td></td>
-        </tr>
-    </table>
-</nav>
+    <strong class="labo">Marzo 2017 – Febrero 2018</strong>
+    <p class="labo">Docente multigrado para primer ciclo en contra turno. 
+        Escuela Rubén Darío, Bolivia 3592, Villa Ballester.</p>
+    </div>
 
--->
+<img class="labo" src="imagenes/geologia.png" alt="Ícono de imagen de geologia">
+<h3 class="labo" id="Geologia">Geología</h3>
+<div class="labo">
+    <strong class="labo">Junio 2012 – Septiembre 2015</strong>
+    <p class="labo">Asistente de Geólogo en Chevron Argentina. Perón 925, Capital Federal.</p>
 
-<h2 id="sobre_mi">Sobre mi</h2>
-<p>Breve descripción sobre mi y mi búsqueda</p>
-
-<h2 id="datos_personales">Datos personales</h2>
-<ul>
-    <li>Fecha de nacimiento: 05 de junio de 1985</li>
-    <li>Nacionalidad: Argentina</li>
-    <li>DNI: 31.673.760</li>
-    <li>Dirección: Mendoza 4809 5to B, CABA</li>
-  </ul>
-
-
-<h2 id="educación">Educación</h2>
-<!-- Menú desplegable con opciones: FORMAL, NO FORMAL, IDIOMAS
-    -->
-    <li id="tipo_educacion"></li>
-<h3 id="Formal">Formal</h3>
-<p>En curso: Profesorado de educación especial.
-    Instituto Superior del Profesorado de Educación Especial "ISPEE".
+    <strong class="labo">Julio 2015 – Diciembre 2015</strong>
+    <p class="labo">Expositora y guía en el stand de Geología, en Tecnópolis.</p> 
     
-    Profesora de Educación Primaria. Egresada 2021.
-    Escuela Normal Superior N° 10 D.E. 10, “Juan Bautista Alberdi” 
-    
-    Licenciatura en Ciencias Geológicas (2005 – 2012). Levemente incompleta.
-    Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, Capital Federal, Argentina.
-    
-    Estudios secundarios (1998 – 2002). 
-    Perito Mercantil. Escuela de Comercio Nro. 9 D.E 11, Capital Federal.
-    </p>
+    <strong class="labo">Julio 2014 – Diciembre 2014</strong>
+    <p class="labo">Expositora y guía en el stand de Geología, en Tecnópolis.</p>
+</div>
 
-<h3 id="No formal">No Formal</h3>
-<p>
-Astronomía General: Introducción al conocimiento del Universo. Planetario Galileo Galilei de Buenos Aires (36hs cátedra), año 2001.
+    
+<img class="labo" src="imagenes/administracion.png" alt="Ícono de imagen de administracion">
+<h3 class="labo" id="Administrativo">Administrativo</h3>
+<div class="labo"> 
+    <strong class="labo">Febrero 2016 – Diciembre 2016</strong>
+    <p class="labo">Administrativa de logística en Librería Lyris. Andonaegui 1273, CABA. 
+        Contacto: José  Miranda 15 5109 1317.</p>
 
-Conocimiento del Cielo. Asociación Argentina “Amigos de la Astronomía” (3 meses), año 2002.
+    <strong class="labo">Marzo 2011 – Junio 2012</strong>
+    <p class="labo">Recepcionista y atención al cliente de consultorio médico. Juncal 2431, Capital Federal. 
+         Contacto: Dr. Heriberto J. Engel.</p>
+        </div>
+    
+<img class="labo" src="imagenes/voluntariado.png" alt="Ícono de imagen de voluntariados">   
+<h3 class="labo" id="Voluntariados">Voluntariados</h3>
+<div class="labo">
+    <strong class="labo">Octubre 2010</strong>
+    <p class="labo">Participación en carácter de colaboradora de divulgación en la Noche de los Museos. 
+        Departamento de Ciencias Geológicas, FCEyN, Universidad de Buenos Aires.</p>
 
-Introducción a la Geología. Planetario Galileo Galilei de Buenos Aires (20hs reloj), año 2003.
+    <strong class="labo">Enero 2009  </strong>
+    <p class="labo">Trabajo voluntario como Ayudante de Guardaparques, en el Parque Nacional Los Glaciares, 
+        Provincia de Santa Cruz.</p>
 
-Teatro. Centro de Educación no Formal Varela, Varela 753, CABA, años 1998 a 2003.
+    <strong class="labo">2006, 2007, 2010</strong>
+    <p class="labo">Participación en carácter de colaboradora de divulgación en la Semana de las Ciencias 
+        de la Tierra. FCEyN, Universidad de Buenos Aires.</p>
 
-Teatro. Con el profesor Gabriel Galindez (y en el grupo de Teatro comunitario Pompeya), años 2013 a 2014.
+    <strong class="labo">2001 – 2005 (durante el período de vacaciones de invierno)</strong>
+    <p class="labo">Trabajo voluntario  en el Planetario de la Ciudad de Buenos Aires, en las áreas de 
+        informes, astronomía y atención al público.</p>
+    </div>
 
-Astronomía General: Introducción al conocimiento del Universo. Planetario Galileo Galilei de Buenos Aires (36hs cátedra), año 2016 y 2018.
-
-agregar  curso de DATA
-</p>
-
-<h3 id="Idiomas">Idiomas</h3>
-<p>Idiomas
-
-    Inglés. 
-    Lectura, escritura y conversación, nivel intermedio.
-    
-    Materias cursadas en el Departamento de Industrias, de la Universidad de Buenos Aires, Ciudad Universitaria:
-    Inglés preparatorio (nueve)
-    Inglés Universitario I (diez)
-    Inglés Universitario II (ocho)
-    </p>
-
-<h2>Experiencia laboral</h2>
-<!-- Menú desplegable: Docencia, Geología, Recepción, Voluntariados
-    -->
-<p>Febrero 2022 – Actualidad
-    Docente de plurigrado en segundo ciclo, en el Centro de Educación Complementario “La escuelita”, sede Barrio El Ceibo, La Lucila.
-    
-    Marzo 2021 – Febrero 2022 
-    Docente de grado de carácter suplente en escuelas públicas de la Ciudad de Buenos Aires.
-    
-    Marzo 2018 – Marzo 2021
-    Docente de apoyo para primer grado. Instituto Tomás Devoto, Franklin D. Roosevelt 5678, Villa Urquiza.
-    
-    Marzo 2017 – Febrero 2018
-    Docente multigrado para primer ciclo en contra turno. Escuela Rubén Darío, Bolivia 3592, Villa Ballester.
-    
-    Febrero 2016 – Diciembre 2016
-    Administrativa de logística en Librería Lyris. Andonaegui 1273, CABA. Contacto: José  Miranda 15 5109 1317.
-    
-    Julio 2015 – Diciembre 2015 
-    Expositora y guía en el stand de Geología, en Tecnópolis.
-    
-    Julio 2014 – Diciembre 2014
-    Expositora y guía en el stand de Geología, en Tecnópolis.
-    
-    Junio 2012 – Septiembre 2015
-    Asistente de Geólogo en Chevron Argentina. Perón 925, Capital Federal.
-    
-    Marzo 2011 – Junio 2012
-    Recepcionista y atención al cliente de consultorio médico. Juncal 2431, Capital Federal.  Contacto: Dr. Heriberto J. Engel.
-    
-    Octubre 2010
-    Participación en carácter de colaboradora de divulgación en la Noche de los Museos. Departamento de Ciencias Geológicas, FCEyN, Universidad de Buenos Aires.
-    
-    Enero 2009 (durante el período de vacaciones de verano)
-    Trabajo voluntario como Ayudante de Guardaparques, en el Parque Nacional Los Glaciares, Provincia de Santa Cruz.
-    
-    2006, 2007, 2010
-    Participación en carácter de colaboradora de divulgación en la Semana de las Ciencias de la Tierra. FCEyN, Universidad de Buenos Aires.
-    
-    2001 – 2005 (durante el período de vacaciones de invierno)
-    Trabajo voluntario  en el Planetario de la Ciudad de Buenos Aires, en las áreas de informes, astronomía y atención al público.
-    </p>
-
-<h2>Contacto</h2>
-<!-- VER cómo dejar espacio entre el mail y el botón de enviar mail
-    -->
-<ul>
-    <li>Teléfono celular: (011) 15 3664 2251</li>
-    <li>E-mail: marianagaddi@gmail.com <button type="button" id="botón"><a href="mailto:marianagaddi@gmail.com">Enviar E-mail</a></button></li>
-</ul>
-
-
-<h2>Último curso realizado</h2>
-<p>este curso y gracias por la oportunidad!!!</p>
+<h2 class="contacto" id="datos_contacto">Contacto</h2>
+    <ul class="contacto" >
+        <li class="contacto"><strong>Teléfono celular: </strong>(011) 15 3664 2251</li>
+        <li class="contacto"> <strong>E-mail: </strong>marianagaddi@gmail.com 
+        <button type="button" id="boton">
+        <a href="mailto:marianagaddi@gmail.com">Enviar E-mail</a>
+        </button>
+        </li>
+     </ul>
 </section>
+
+<footer>
+<div class="footer" onmouseover="mOver(this)" onmouseout="mOut(this)">
+    Muchas gracias...
+</div>
+    
+<script>
+function mOver(obj) {
+      obj.innerHTML = "¡Me encantó aprender sobre HTML, CSS y JS!"
+}
+    
+function mOut(obj) {
+      obj.innerHTML = "Muchas gracias..."
+}
+</script>
+    <p class="calendario">
+      <span class="calendario">
+      <img class="calendario" src="imagenes/calendario.png" alt="Ícono de un calendario">
+     </span>   
+    </p>
+<p id="fecha">       
+</p>
+<script> const d = new Date();
+    document.getElementById("fecha").innerHTML = d;
+</script>
+</footer>
+
+</div>
 </body>
 </html>
